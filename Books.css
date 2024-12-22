@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+body {
+    background-color: #000a1f;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    margin: 50px auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+
+.container .image-container {
+    position: relative; 
+    width: 12%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: all 0.3s ease-in-out;
+}
+
+.container .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    transition: all 0.3s ease-in-out;
+}
+
+.container .image-container:hover {
+    transform: scale(1.1);
+}
+
+
+.container .image-container .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.container .image-container:hover .overlay-text {
+    opacity: 1; }
+
+.header {
+    color: #000a1f;
+    background-color: #6197e8;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    font-size: 30px;
+    font-family: "Anton", sans-serif;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.header h1:hover {
+    color: #2c24c1;
+    text-shadow: 3px 3px 7px rgb(98, 71, 221);
+    transition: all 0.3s ease-in-out;
+}
+
+footer {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #6197e8;
+    padding: 10px 0;
+}
+
+footer a {
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #000a1f;
+}
